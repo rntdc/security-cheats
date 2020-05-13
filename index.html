@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,15 +14,35 @@
 </head>
 
 <body>
-    <video id="vd" autoplay loop muted>
-        <source src="lib/video.mp4" type="video/mp4">
-    </video>
 
-    <a onclick="unmute()" id="icon-play">
-        <span class="material-icons" id="play">
-            volume_up
-        </span>
-    </a>
+    <div class="video-background">
+        <div class="video-wrap">
+            <div id="video">
+                <video id="vd" autoplay loop muted>
+                    <source src="lib/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="caption text-center">
+        <h1>SECURITY <span id="color">CHEATS</span></h1>
+        <div id="texts">
+            <h3>BLA WITH THE BLANDING HA</h3>
+        </div>        
+        <a href="#" class="btn btn-outline-light btn-lg">GET STARTED</a>
+    </div>
+
+    <div class="media">
+        <a onclick="unmute()" id="icon-play">
+            <span class="material-icons" id="play">
+                volume_up
+            </span>
+        </a>
+    </div>
+   
+
+    
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
