@@ -19,7 +19,7 @@ body{
 
 .caption{
     position: absolute;
-    top: 38%;
+    top: 28%;
     width: 100%;
     color: white;
 }
@@ -38,18 +38,32 @@ body{
     padding-bottom: 1.6rem;
 }
 
+.btn-outline-light:hover{
+   background-color: #4682B4;
+   border-color: #4682B4;
+   color: white;
+}
+
 .btn-lg{
     border-width: medium;
     border-radius: 0;
     font-size: 1.1rem;
     padding: .6rem .1.3rem;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 506px) {
+  .btn-lg{
+    margin-top: 120px !important;
+  }
 }
 
 .media{
     position: absolute;
-    top: 95%;
-    padding-left: 2rem;
+    top: 90%;
+    padding-left: 3rem;
 }
+
 
 .material-icons{
     width: 200px;
@@ -67,7 +81,33 @@ body{
 .material-icons:hover{
     color: #4682B4	;
 }
-
+.js-nametag{
+  position: absolute;
+  width: 100%;
+}
+.js-nametag:nth-child(1){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate-reverse;  
+}  
+.js-nametag:nth-child(2){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+  
+@keyframes fade{
+  0%,50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* Layout */
 .video-wrap {
